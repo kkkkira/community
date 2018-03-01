@@ -1,0 +1,39 @@
+.common-close(){
+    content: '';
+    display: block;
+    width: 14px;
+    height: 2px;
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    border-radius: 4px;
+    background-color: #999;
+}
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 36px;
+    margin-bottom: 15px;
+    input{
+        width: 100%;
+        color: #eaeaea;
+    }
+    .input-close-btn{
+        position: relative;
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+        border-radius: 24px;
+        background-color: #eaeaea;
+        flex-shrink: 0;
+        &:before{
+            .common-close;
+            transform: rotate(45deg);
+        }
+        &:after{
+            .common-close;
+            transform: rotate(-45deg);
+        }
+     }
+}

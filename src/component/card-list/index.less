@@ -1,0 +1,48 @@
+@import "../../assets/less/global";
+a{
+    display: block;
+}
+.cate-mixin(@i, @color){
+    .card-cate-@{i}{
+        border-color: @color;
+        color: @color;
+    }
+}
+.article-card{
+    margin-bottom: 10px;
+    .ant-card-head{
+        min-height: 0;
+        border-bottom: 0;
+        padding: 0 5px;
+    }
+    .ant-card-head-title{
+        padding: 10px 0;
+    }
+    .ant-card-body{
+        padding:10px 6px;
+    }
+    .ant-card-meta-description{
+        text-align: left;
+        .ell
+    }
+    .article-card-footer{
+        margin-top: 10px;
+        text-align: left;
+    }
+    .article-card-cate{
+        display: inline-block;
+        width: 48px;
+        line-height: 22px;
+        margin-right: 20px;
+        border-radius: 4px;
+        border:1px solid;
+        text-align: center;
+    }
+    .article-card-time{
+        color: #ccc;
+    }
+    .cate-mixin(1,#fc7504);
+    .cate-mixin(2,#feab0e);
+    .cate-mixin(3,#6cc2ae);
+    .cate-mixin(4,#7ab6fa);
+}

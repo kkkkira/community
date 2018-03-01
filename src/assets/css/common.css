@@ -1,0 +1,83 @@
+html,body{
+    background: #efefef;
+}
+ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+input{
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.my-drawer {
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.am-drawer-overlay{
+    z-index: 6;
+}
+.my-drawer .am-drawer-sidebar {
+    background-color: #f9f9f9;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 9;
+}
+.my-drawer .am-drawer-sidebar .am-list {
+    width: 260px;
+    padding: 0;
+}
+
+.my-header,.my-header>div{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.am-flexbox .am-flexbox-item{
+    color: #e47171;
+}
+.am-flexbox .am-flexbox-item:first-child{
+    margin-left:15px;
+}
+.am-flexbox .am-flexbox-item:last-child{
+    text-align: right;
+    margin-right: 15px;
+}
+
+.am-list-item{
+    padding-left: 0;
+}
+.am-list-item .am-list-line{
+    padding-right: 0;
+}
+
+.my-header{
+    background: #fff;
+    box-shadow: 0 1px 10px #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.container-main{
+    padding: 10px 10px 0;
+}
+
+.ell{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.route-wrapper>div{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
